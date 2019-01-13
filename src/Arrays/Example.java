@@ -1,6 +1,7 @@
 package Arrays;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.function.IntUnaryOperator;
 
 
@@ -45,8 +46,12 @@ public class Example {
         //spliterator
         int [] e = {1,2,3,5,6};
         Arrays.stream(e);
-        System.out.println("stream: " + Arrays.toString(e));
+        System.out.println("stream: " + Arrays.stream(e));
 
+        //asList
+        String[] f = {"ert","ert2"};
+        //List<String> f1 = Arrays.asList(f);
+        System.out.println("list: " + Arrays.toString(f));
 
         //многомерный масссивint[] d = {3, 6, 1, 5, 2};
         //        Arrays.parallelSort(d);
